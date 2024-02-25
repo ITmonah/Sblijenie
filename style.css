@@ -5,12 +5,15 @@
 
 body {
     font-family: Rubik;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
     width: 1440px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .header__logo h1 {
@@ -28,6 +31,39 @@ body {
     flex-direction: row;
     gap: 11px;
     align-items: end;
+}
+
+.header__center {
+    margin-top: 41px;
+    display: flex;
+    gap: 37px;
+}
+
+.header__center a {
+    color: #000;
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.header button {
+    margin-top: 30px;
+    width: 227px;
+    height: 45px;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    font-family: Rubik;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
 }
 
 /*Стиль для главного верхнего блока*/
