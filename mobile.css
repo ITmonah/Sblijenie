@@ -1,0 +1,27 @@
+@media screen and (max-width:1388px) {
+    .info {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .date {
+        display: none;
+    }
+
+    .rapprochement h2 {
+        margin-top: 50px;
+    }
+
+    .rapprochement h1 {
+        margin-top: 68px;
+    }
+
+    .rapprochement__card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form_radio {
+        margin-top: 98px;
+    }
+}
