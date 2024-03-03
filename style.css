@@ -339,11 +339,11 @@ body {
     border: 2px solid #ddd;
     content: " ";
     display: block;
-    height: 12px;
-    left: -4px;
+    height: 34px;
+    width: 34px;
+    left: -9px;
+    top: -9px;
     position: absolute;
-    top: -4px;
-    width: 12px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -353,10 +353,10 @@ body {
 .rapprochement__wrapper label {
     cursor: pointer;
     display: inline-block;
-    height: 8px;
+    height: 20px;
+    width: 20px;
     margin: 25px 12px 0 16px;
     position: relative;
-    width: 8px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -572,11 +572,11 @@ body {
     border: 2px solid #ddd;
     content: " ";
     display: block;
-    height: 12px;
-    left: -4px;
+    height: 34px;
+    width: 34px;
+    left: -9px;
+    top: -9px;
     position: absolute;
-    top: -4px;
-    width: 12px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -586,10 +586,10 @@ body {
 .wrapper label {
     cursor: pointer;
     display: inline-block;
-    height: 8px;
+    height: 20px;
+    width: 20px;
     margin: 25px 12px 0 16px;
     position: relative;
-    width: 8px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
