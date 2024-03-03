@@ -321,7 +321,7 @@ body {
     box-shadow: 0px 4px 4px 0px #00000040;*/
     border-radius: 30px;
     width: 280px;
-    height: 480px;
+    height: 520px;
     overflow: hidden;
 }
 
@@ -330,6 +330,9 @@ body {
 }
 
 .rapprochement__slides {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     height: inherit;
     position: absolute;
     width: inherit;
@@ -418,6 +421,21 @@ body {
     justify-content: center;
     gap: 19px;
     margin-top: 82px;
+}
+
+.date__1388 {
+    display: none;
+}
+
+.date__1388 p {
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
 }
 
 .date__text p {

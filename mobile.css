@@ -8,6 +8,10 @@
         display: none;
     }
 
+    .date__1388 {
+        display: block;
+    }
+
     .rapprochement h2 {
         margin-top: 50px;
     }
@@ -46,6 +50,7 @@
     #new_news {
         text-align: center;
     }
+
 }
 
 @media screen and (max-width:823px) {
