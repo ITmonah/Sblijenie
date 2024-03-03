@@ -253,6 +253,7 @@ body {
     border: 3px solid #B112A1E0;
     border-radius: 30px;
     width: 280px;
+    height: 480px;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
@@ -293,6 +294,122 @@ body {
     height: 100%;
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*Стили для слайдера*/
+.rapprochement__wrapper {
+    margin: 100px auto 0;
+    position: relative;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+.rapprochement__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 3px solid #B112A1E0;*/
+    border-radius: 30px;
+    width: 280px;
+    height: 480px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    overflow: hidden;
+}
+
+.rapprochement__wrapper>input {
+    display: none;
+}
+
+.rapprochement__slides {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+
+.rapprochement__wrapper .rapprochement__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.rapprochement__wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.rapprochement__wrapper label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.rapprochement__wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.rapprochement__wrapper label:hover,
+#slide01:checked~.rapprochement__controls label:nth-of-type(1),
+#slide02:checked~.rapprochement__controls label:nth-of-type(2),
+#slide03:checked~.rapprochement__controls label:nth-of-type(3),
+#slide04:checked~.rapprochement__controls label:nth-of-type(4) {
+    background: #000000;
+}
+
+.rapprochement__slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide01:checked~.rapprochement__slider>.slide01,
+#slide02:checked~.rapprochement__slider>.slide02,
+#slide03:checked~.rapprochement__slider>.slide03,
+#slide04:checked~.rapprochement__slider>.slide04 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
 }
 
 /*Стили для дат*/
@@ -374,7 +491,7 @@ body {
 
 .news__card-text h1 {
     font-family: Rubik;
-    font-size: 45px;
+    font-size: 44px;
     font-weight: 600;
     line-height: 53px;
     letter-spacing: 0em;
@@ -425,16 +542,120 @@ body {
     object-fit: cover;
 }
 
-.form_radio {
-    margin-top: 188px;
+/*Слайдер новостей*/
+.wrapper {
+    margin: 100px auto 0;
+    position: relative;
 }
 
-.form_radio input {
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    color: #000;
-    accent-color: #000;
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 610px;
+    height: 599px;
+    left: 46px;
+    padding: 18px, 24px, 18px, 24px;
+    border-radius: 10px;
+    gap: 29px;
+    border: 3px solid #B112A1E0;
+    box-shadow: 8px 18px 4px 0px #B112A1E0;
+    overflow: hidden;
+}
+
+.wrapper>input {
+    display: none;
+}
+
+.slides {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+
+.wrapper .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked~.controls label:nth-of-type(1),
+#slide2:checked~.controls label:nth-of-type(2) {
+    background: #000000;
+}
+
+.slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+
+}
+
+#slide1:checked~.slider>.slide1,
+#slide2:checked~.slider>.slide2,
+#slide3:checked~.slider>.slide3,
+#slide4:checked~.slider>.slide4,
+#slide5:checked~.slider>.slide5 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
 }
 
 /*Стили для команды*/
