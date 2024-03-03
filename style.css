@@ -3,6 +3,14 @@
     src: url('font/Rubik-Regular.ttf');
 }
 
+.rapprochement__wrapper {
+    display: none;
+}
+
+.wrapper {
+    display: none;
+}
+
 /*Плавный скролл к якорным ссылкам*/
 html {
     scroll-behavior: smooth;
@@ -361,13 +369,16 @@ body {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: background ease-in-out .5s;
-    -moz-transition: background ease-in-out .5s;
-    -o-transition: background ease-in-out .5s;
-    transition: background ease-in-out .5s;
+    -webkit-transition: background ease-in-out .3s;
+    -moz-transition: background ease-in-out .3s;
+    -o-transition: background ease-in-out .3s;
+    transition: background ease-in-out .3s;
 }
 
-.rapprochement__wrapper label:hover,
+.rapprochement__wrapper label:hover {
+    background: #aaaaaa;
+}
+
 #slide01:checked~.rapprochement__controls label:nth-of-type(1),
 #slide02:checked~.rapprochement__controls label:nth-of-type(2),
 #slide03:checked~.rapprochement__controls label:nth-of-type(3),
@@ -381,10 +392,10 @@ body {
     position: absolute;
     width: inherit;
     z-index: 0;
-    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -webkit-transition: transform ease-in-out .3s, opacity ease-in-out .2s;
+    -moz-transition: transform ease-in-out .3s, opacity ease-in-out .2s;
+    -o-transition: transform ease-in-out .3s, opacity ease-in-out .2s;
+    transition: transform ease-in-out .3s, opacity ease-in-out .2s;
 }
 
 #slide01:checked~.rapprochement__slider>.slide01,
@@ -594,13 +605,16 @@ body {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: background ease-in-out .5s;
-    -moz-transition: background ease-in-out .5s;
-    -o-transition: background ease-in-out .5s;
-    transition: background ease-in-out .5s;
+    -webkit-transition: background ease-in-out .3s;
+    -moz-transition: background ease-in-out .3s;
+    -o-transition: background ease-in-out .3s;
+    transition: background ease-in-out .3s;
 }
 
-.wrapper label:hover,
+.wrapper label:hover {
+    background: #aaaaaa;
+}
+
 #slide1:checked~.controls label:nth-of-type(1),
 #slide2:checked~.controls label:nth-of-type(2) {
     background: #000000;
@@ -647,7 +661,8 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin: 0px;
-    width: 674px;
+    max-width: 674px;
+    width: 100%;
 }
 
 .team__logo {

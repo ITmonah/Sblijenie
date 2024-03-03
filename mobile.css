@@ -24,4 +24,99 @@
     .form_radio {
         margin-top: 98px;
     }
+
+    .wrapper {
+        display: block;
+        margin-top: 71px;
+    }
+
+    .news__card {
+        display: none;
+    }
+
+    .team {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .team__text p {
+        text-align: justify;
+    }
+
+    #new_news {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:823px) {
+    body {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .rapprochement__wrapper {
+        display: block;
+    }
+
+    .rapprochement__card {
+        display: none;
+    }
+
+    .rapprochement__wrapper .rapprochement__controls {
+        margin-top: 80px;
+    }
+
+    .circle__line {
+        display: none;
+    }
+
+    .circle {
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 50px;
+    }
+
+    .circle__step {
+        flex-direction: row;
+    }
+
+    .circle__step-text p {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    #arrow1 {
+        display: none;
+    }
+
+    .rapprochement__wrapper {
+        margin-top: 50px;
+    }
+
+    .info__text-stroki {
+        display: none;
+    }
+
+    .rapprochement__card-text p {
+        font-size: 26px;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .info__img {
+        width: 362px;
+        height: 352px;
+    }
+
+    .info__text-zaglavie h1 {
+        font-size: 34px;
+    }
+
+    .rapprochement h2 {
+        font-size: 38px;
+    }
 }
