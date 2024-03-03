@@ -59,6 +59,16 @@
         padding-right: 3%;
     }
 
+    .nav1 {
+        display: block;
+    }
+
+    .navbar,
+    .navbar-toggler {
+        width: 80px;
+        height: 50px;
+    }
+
     .rapprochement__wrapper {
         display: block;
     }
@@ -123,5 +133,147 @@
 
     .rapprochement h2 {
         font-size: 38px;
+    }
+
+    .slider {
+        width: 482px;
+        height: 630px;
+    }
+
+    .news__card-item {
+        width: 482px;
+        height: 630px;
+    }
+
+    .news__card-text h1 {
+        font-size: 28px;
+    }
+
+    .news__card-text p {
+        font-size: 20px;
+    }
+
+    .news__card-text {
+        gap: 15px;
+    }
+
+    .news__card-href a {
+        font-size: 28px;
+    }
+
+    #new_news {
+        font-size: 42px;
+        margin-top: 40px;
+    }
+
+    .wrapper {
+        margin-top: 40px;
+    }
+
+    .team__text p {
+        text-align: left;
+        font-size: 26px;
+    }
+
+    .href-VK {
+        gap: 10px;
+    }
+
+    .team__logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+    }
+
+    .team__logo img {
+        width: 70%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width:538px) {
+    .href-VK__text a {
+        font-size: 26px;
+    }
+
+    .href-VK__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .QR-Code__img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .QR-Code button {
+        width: 300px;
+        margin-top: 60px;
+    }
+
+    .slider {
+        width: 382px;
+        height: 800px;
+    }
+
+    .news__card-item {
+        width: 382px;
+        height: 800px;
+    }
+
+    .news__card-text h1 {
+        font-size: 24px;
+    }
+
+    .team__text p {
+        font-size: 24px;
+    }
+
+    .rapprochement h1 {
+        font-size: 38px;
+    }
+
+    .info__text-zaglavie h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .slider {
+        width: 330px;
+        height: 800px;
+    }
+
+    .news__card-item {
+        width: 330px;
+        height: 800px;
+    }
+
+    .news__card-text h1 {
+        font-size: 22px;
+    }
+
+    .news__card-text p {
+        font-size: 17px;
+    }
+
+    .team__text p {
+        font-size: 24px;
+    }
+
+    .href-VK__text a {
+        font-size: 22px;
+    }
+
+    .href-VK__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info__img {
+        width: 312px;
+        height: 302px;
     }
 }
